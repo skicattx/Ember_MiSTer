@@ -202,7 +202,7 @@ assign VIDEO_ARY = (!ar) ? 12'd3 : 12'd0;
 
 `include "build_id.v" 
 localparam CONF_STR = {
-	"MyCore;;",
+	"Ember;;",
 	"-;",
 	"O89,Aspect ratio,Original,Full Screen,[ARC1],[ARC2];",
 	"O2,TV Mode,NTSC,PAL;",
@@ -273,7 +273,7 @@ wire VSync;
 wire ce_pix;
 wire [7:0] video;
 
-mycore mycore
+Ember32 EmberCPU
 (
 	.clk(clk_sys),
 	.reset(reset),
